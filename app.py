@@ -11,7 +11,7 @@ mongo = PyMongo(app)
 @app.route('/')
 def homepage():
     the_time = datetime.now().strftime("%A, %d %b %Y %l:%M %p")
-    value = mongo.db.testColl.find_one()
+    #value = mongo.db.testColl.find_one()
 
     return """
     <h1>Hello heroku</h1>
