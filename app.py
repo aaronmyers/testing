@@ -1,10 +1,12 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
+from flask_pymongo import PyMongo
 import os
 from datetime import datetime
 app = Flask(__name__)
 
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['MONGODB_URI']
+mongo = PyMongo(app)
 
 @app.route('/')
 def homepage():

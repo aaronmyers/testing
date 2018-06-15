@@ -4,6 +4,7 @@ gunicorn = "*"
 flask = "*"
 datetime = "*"
 flask-sqlalchemy = "*"
+flask-pymongo = "*"
 
 
 [requires]
